@@ -1,0 +1,63 @@
+<br>
+<br>
+<br>
+
+<div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Hipstacart</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <form class="navbar-form navbar-left" role="search">
+      <%= form_tag root_path, method: :get do %>
+      <%= text_field_tag :search_text %>
+      <%= submit_tag "Search", class: "btn btn-default" %>
+    </form>
+    <% end %>
+      <form class="navbar-form navbar-right">
+
+        <a class="cartbutton" href="cart"><i class="fa fa-shopping-cart"></i></a>
+       <a class="buttoncount" href="cart"> <%= @cart.cart_items.sum('quantity') %> </a>
+      </form>
+    </div><!--/.navbar-collapse -->
+  </div>
+</nav>
+</div>
+
+<div class="container">
+  <%= image_tag "hipster-stash.jpg" %>
+
+  <h2>What is a Hipster?</h2>
+
+  <p>It’s been a bad week for hipsters, although the fact that the new iPhone 6 has just dropped must come as some consolation.
+  There’s been an avalanche of pieces criticising the poor old hipster lately; in the New Statesman, Will Self bore witness to the frustrating conflagration of gingham and trap-hop in Fairfax, LA, while the Guardian debated whether it was OK to hate hipsters or not. Gizmodo declared that hipsters are ruining cities around the globe, from Portland, Oregon to Reykjavik, while there's now even a Twitter algorithm, Hipsterbait, designed to annoy urban trendies with deliberately incorrect information about their favourite things.
+  Personally, I remain unconvinced that the hipster deserves the same level of scorn and hostility that’s usually reserved for discussions about whether or not to cull badgers. And it’s because every time this debate surfaces – who are the hipsters? How did they get here? What can we do to get rid of them? – I'm left with the nagging feeling that nobody, not even someone as clever as Will Self, actually knows what constitutes a hipster. In other words: I don’t think hipsters really exist.
+  From the foodie Instagramming his smashed avocado on toast to the tweedy gentleman twirling his moustache while he rides his vintage fixie through Dalston, we're all familiar with the sort of individuals who warrant dismissive "hipster" tag. But the point is that nobody actually chooses to identify themselves as a hipster, even those who seem to scream ‘hipster’ on the outside. And that creates a bit of a problem when considering this a subculture. Unlike mods, skinheads, ravers and the countless youth tribes before and since, no one would ever put their hand up and call themselves a hipster (and even if they did, that would instantly prove they were no such thing).</p>
+
+  <p>
+  If everyone has a different definition of hipster, then how are you supposed to decide who is, or who isn’t, a hipster? And who gets to decide?
+  Case in point: some of my friends think I’m a hipster. One helpfully pointed out that it’s because I wear glasses, unaware that during the nineties I wore a neon blue and orange pair of Adidas specs so lurid that Elton John would politely turn them down. At university I also owned such an extensive tracksuit collection that I was mistaken for a member of staff at Sports Direct several times.
+  I firmly reject the idea that I’m a hipster. For a start, I don’t live in an achingly cool part of London (which I’ll leave anonymous in case my landlord’s reading this; I don’t want him being offended). I’d rather watch TV than go out to an obnoxious East End club, and the last time I tried riding a bike I freewheeled into a cow, so a fixie isn’t for me.
+  I also find it physically impossible to grow a moustache, let alone a full rhododendron-bush beard. Last time I tried doing Movember, a colleague left a Gilette razor on my desk with a note which read: "Take A hint". I grew up in rural Cumbria and I’m proud of my working- class roots, although I admit I find myself turning into a bit of an obnoxious a---hole when it comes to coffee (a hipster obsession, or so we're told).
+  The reason nobody wants to own up to being a hipster is because it is increasingly a pejorative term; it’s a social slur. When we call someone a hipster, we’re identifying facets of their personality or lifestyle that we think are obnoxious, aloof, pretentious, shallow and calling them out on it. We're telling them that even if they think they're tattoos and cockatiel hairdo are meant to signify an edgy, eccentric, individual streak, they're just part of the herd.
+  We're saying it's substance over style – it’s a cocktail in a jam jar (or worse, in a teapot). We're saying it’s the guy in New York who writes poetry on an old typewriter. We're saying it's superficial, embarrassing and contrived.</p>
+
+  <p>
+  These people are real of course, but that doesn't make them hipsters, even if aspects of their behaviour are hipsterish. That’s my logic, and as long as you think of it like that, the whole pattern of obnoxiousness becomes easier to stomach.
+  Yes, some people look like absolute muppets rollerskating about in a fur coat and bumbag. But hipster behaviour comes and goes, and always has done, even before we gave it a name. Hipsterishness exists on a spectrum; sometimes someone exhibits a lot of those traits and other times we're just angry at someone for using a laptop in Starbucks. And when jam-jar cocktails are popping up in Eastenders, you have to admit that the whole thing seems a lot less trendy.
+  What I find most interesting is why ordinary people do obnoxious things; what inspires these displays of hipsterishness. Given how many filtered plates of food end up on my Instagram feed, I’m inclined to think it’s down to a basic need to be more interesting than we actually are. To try new things, and generally give off a whiff of being at the vanguard of progressive ideas. Living in London, there is pressure, whether you like it or not, to appear interesting, but the lesson that the so-called hipster backlash teaches us is "try too hard and you can smother people with your efforts".
+  If you were to compile a list of things that are offensively hipsterish, it might include the following, in no particular order: New Balance trainers, very good coffee, very good gin, craft ale, pulled pork, various Apple products, jazz, facial hair, fixed-wheel bikes, anything prefixed with the word "artisan".
+  Can you honestly say you haven’t tried, liked or embraced any of the above? If no, does that make you a hipster?</p>
+
+  <p>
+  The hipster is not a genuine social subgroup. It's smoke and mirrors, and we’re all guilty of stumbling into obnoxiousness one way or another. Better to be all in it together, or deny its existence entirely, and save the culling for the badgers.</p>
+
+  <%= link_to "Home", root_path, class: "btn btn-primary" %>
+</div>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><% if content_for?(:title) %>
+            <%= content_for(:title) %> | Hipster
+          <% else %>
+             Hipster Things!!!
+          <% end %></title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+<%= yield %>
+</div>
+
+</body>
+</html>

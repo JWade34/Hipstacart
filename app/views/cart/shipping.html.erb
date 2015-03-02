@@ -1,0 +1,15 @@
+<div class="page-title">
+  <h1>Where are we sending your rug Lebowski? <h4>“This is a very complicated case Maude. You know, a lotta ins, a lotta outs, lotta what-have-yous.” — The Dude</h4></h1>
+</div>
+
+
+<%= simple_form_for @cart, url: update_shipping_path do |f| %>
+  <%= f.input :address_line_1 %>
+  <%= f.input :address_line_2 %>
+  <%= f.input :city %>
+  <%= f.input :state, maxlength: 2 %>
+  <%= f.input :zip %>
+  <%= f.submit class: "btn btn-primary btn-lg" %>
+<% end %>
+
+<%= link_to "Home", root_path, class: "btn btn-primary" %>

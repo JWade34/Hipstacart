@@ -1,0 +1,3 @@
+Product.create name: "Skinny Jeans", remote_photo_url: "http://us.i1.yimg.com/us.yimg.com/i/us/shine/fashion/blog.skinnyjeans.jpg", price: 42999, description: "Pants so tight you won't be able to get em off"
+Product.create name: "Coffee essentials", remote_photo_url: "https://lh6.ggpht.com/NntzT2TKvBL3-gqcvPbMzdnKHn5N9Z5eYjO0V6W5GI_5MPs2wfU8Ho7Zbob_RSpjN9TSR6cie3wD0VAnWRp4pw=s1100-c", price: 12500, description: "You'll be trying to grow a mustache in no time with this home setup!"
+Product.create name: "Flannel Shirt", remote_photo_url: "http://millennialmagazine.com/wp-content/uploads/2014/07/Jeremy_Davis_paramore.jpg", price: 8999, description: "Plaid with so many squares, you'll feel like you're at a Dave Matthews concert"
