@@ -119,11 +119,12 @@
            <div class="navbar-form pull-right">
               <%= link_to "What is a Hipster?", info_path, class: "btn btn-primary" %>
             </div>
-           <% if session[:cart_id].to_i > 0 %>
+           <% if session[:cart_id].to_i > 0 && @cart.cart_items.sum('quantity') %>
            <%= link_to cart_path do %>
              <form class="navbar-form navbar-right">
                <a class="cartbutton" href="cart"><i class="fa fa-shopping-cart"></i></a>
-              <a class="buttoncount" href="cart"> <%= @cart.cart_items.sum('quantity') %> </a>
+              <a class="buttoncount" href="cart">
+              <%= @cart.cart_items.sum('quantity') %> </a>
               <% end %>
               <% end %>
              </form>
