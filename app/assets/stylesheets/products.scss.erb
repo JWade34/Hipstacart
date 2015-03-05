@@ -2,10 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .background {
-  background: url(<%= image_path 'wood2.jpg' %>);
+  background: url(<%= image_path 'wood.jpg' %>);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #ecf0f1;
+
 }
 
 .img-responsive {
@@ -21,4 +24,31 @@
 
 .buttoncount {
   color: white;
+}
+
+
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
 }
