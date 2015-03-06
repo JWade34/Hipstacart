@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require bootstrap
 //= require payola
 //= require jquery_ujs
